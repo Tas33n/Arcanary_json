@@ -1,4 +1,4 @@
-# ArcaneOS Wallpapers #
+# ArcaneOS Wallpapers  || Unofficial by Lamb3rt #
 Copyright (C) 2021 ArcaneOS
 All raw (source) images are from pexels.com, all credits and copyrights goes to each respective artists.
 <p align="center">
