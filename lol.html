@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Show Image from JSON using jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <style>
+        table 
+        {
+            width: 300px;
+            font: 17px Calibri;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        table img 
+        {
+            border: none;
+            width: 51px;
+            height: 51px;
+        }
+    </style>
+</head>
+<body>
+    
+
+<script>
+    $(document).ready(function () {
+  var jsonURL = "lamb3rt.json";
+  $.getJSON(jsonURL, function (json) 
+  {
+    var imgList= "";
+
+    $.each(json.products, function () {
+      imgList += '<li><img src= "' + this.url + '"></li>';
+    });
+
+   $('#dvProdList').append(imgList);
+  });
+});
+</script>
+
+</body>
+</html>
